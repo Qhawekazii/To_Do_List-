@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/adelinazw-flower-6312439.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #5b4b8a;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #f849cc;
+  border-radius: 8px;
+  outline: none;
+}
+
+#addBtn {
+  padding: 12px 18px;
+  border: none;
+  background: #8b73ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background: #5dc6e0;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px;
+  border: none;
+  background: #eee9ff;
+  color: #5b4b8a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #ddd3ff;
+}
+
+#taskList {
+  list-style: none;
+}
+
+li {
+  background: #faf8ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-btn {
+  border: none;
+  background: #ff7b9c;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #e66486;
+}
+
+#currentDate {
+  text-align: center;
+  color: #8a0483;
+  margin-bottom: 15px;
+  font-size: 20px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
