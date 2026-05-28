@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: transparent;
   width: 90%;
   max-width: 500px;
   padding: 30px;
