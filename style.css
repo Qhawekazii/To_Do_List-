@@ -128,3 +128,16 @@ li {
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+
+.low {
+  color: green;
+}
+
+.medium {
+  color: orange;
+}
+
+.high {
+  color: red;
+}
+
