@@ -113,7 +113,7 @@ function saveTasks() {
 }
 
 // Adds tasks when Enter key is pressed
-taskInput.addEventListener("keypress", function(event) {
+taskInput.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     addTask();
   }
