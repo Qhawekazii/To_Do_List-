@@ -128,14 +128,3 @@ const options = { weekday: "long", year: "numeric", month: "long", day: "numeric
 
 dateElement.textContent = today.toLocaleDateString("en-ZA", options);
 
-// Get the priority dropdown element
-const prioritySelect = document.getElementById('priority-select');
-
-
-// Store task information including its priority level
-const task = {
-  id: nextId++,
-  text: taskInput.value,
-  completed: false,
-  priority: prioritySelect.value
-};
