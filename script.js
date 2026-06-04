@@ -124,3 +124,11 @@ dateElement.textContent = today.toLocaleDateString("en-ZA", options);
 
 // Get the priority dropdown element
 const prioritySelect = document.getElementById('priority-select');
+
+// Create a new task object with task details and selected priority
+const task = {
+  id: nextId++,
+  text: taskInput.value,
+  completed: false,
+  priority: prioritySelect.value
+};
