@@ -80,8 +80,12 @@ function displayTasks() {
     const span = document.createElement("span");
     span.textContent = task.text;
 
+    const priority = document.createElement("small");
+    priority.textContent = task.priority;
+
     leftDiv.appendChild(checkbox);
     leftDiv.appendChild(span);
+    leftDiv.appendChild(priority);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
