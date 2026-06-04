@@ -132,3 +132,11 @@ const task = {
   completed: false,
   priority: prioritySelect.value
 };
+
+// Store task information including its priority level
+const task = {
+  id: nextId++,
+  text: taskInput.value,
+  completed: false,
+  priority: prioritySelect.value
+};
