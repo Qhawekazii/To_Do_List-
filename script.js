@@ -1,3 +1,4 @@
+const prioritySelect = document.querySelector("#priority-select");
 const taskInput = document.querySelector("#taskInput");
 const addBtn = document.querySelector("#addBtn");
 const taskList = document.querySelector("#taskList");
@@ -27,7 +28,8 @@ function addTask() {
   const newTask = {
     id: Date.now(),
     text: taskText,
-    completed: false
+    completed: false,
+    priority: prioritySelect.value
   };
 
   tasks.push(newTask);
@@ -78,8 +80,12 @@ function displayTasks() {
     const span = document.createElement("span");
     span.textContent = task.text;
 
+    const priority = document.createElement("small");
+    priority.textContent = `(${task.priority})`;
+
     leftDiv.appendChild(checkbox);
     leftDiv.appendChild(span);
+    leftDiv.appendChild(priority);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
@@ -107,7 +113,7 @@ function saveTasks() {
 }
 
 // Adds tasks when Enter key is pressed
-taskInput.addEventListener("keypress", function(event) {
+taskInput.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     addTask();
   }
@@ -121,3 +127,4 @@ const today = new Date();
 const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
 
 dateElement.textContent = today.toLocaleDateString("en-ZA", options);
+
