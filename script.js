@@ -1,3 +1,4 @@
+const prioritySelect = document.querySelector("#priority-select");
 const taskInput = document.querySelector("#taskInput");
 const addBtn = document.querySelector("#addBtn");
 const taskList = document.querySelector("#taskList");
