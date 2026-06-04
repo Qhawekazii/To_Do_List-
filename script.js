@@ -81,7 +81,7 @@ function displayTasks() {
     span.textContent = task.text;
 
     const priority = document.createElement("small");
-    priority.textContent = task.priority;
+    priority.textContent = `(${task.priority})`;
 
     leftDiv.appendChild(checkbox);
     leftDiv.appendChild(span);
