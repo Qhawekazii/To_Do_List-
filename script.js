@@ -28,7 +28,8 @@ function addTask() {
   const newTask = {
     id: Date.now(),
     text: taskText,
-    completed: false
+    completed: false,
+    priority: prioritySelect.value
   };
 
   tasks.push(newTask);
